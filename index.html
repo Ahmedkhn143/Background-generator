@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Gradient Generator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body id="gradient-bg">
+
+    <div class="generator-card">
+        <h1>Gradient Master</h1>
+        <p class="subtitle">Design beautiful linear gradients.</p>
+
+        <div class="controls">
+            <div class="color-inputs">
+                <!-- Color 1 -->
+                <input type="color" id="color1" name="color1" value="#6a11cb">
+                <!-- Color 2 -->
+                <input type="color" id="color2" name="color2" value="#2575fc">
+            </div>
+
+            <!-- Direction Selector -->
+            <select id="direction">
+                <option value="to right">To Right &rarr;</option>
+                <option value="to left">To Left &larr;</option>
+                <option value="to bottom">To Bottom &darr;</option>
+                <option value="to top">To Top &uarr;</option>
+                <option value="to bottom right">Diagonal &searr;</option>
+                <option value="to top left">Diagonal &nwarr;</option>
+            </select>
+        </div>
+
+        <!-- The CSS Code Output -->
+        <div class="css-output" id="output-text">
+            linear-gradient(to right, #6a11cb, #2575fc);
+        </div>
+
+        <div class="button-group">
+            <button class="btn-random" id="random-btn">Randomize</button>
+            <button class="btn-copy" id="copy-btn">Copy CSS</button>
+        </div>
+    </div>
+
+    <!-- Notification Message -->
+    <div id="message" class="message">Copied to Clipboard!</div>
+
+  </body>
+    <script src="script.js"></script>
+</html>
